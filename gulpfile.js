@@ -4,7 +4,7 @@ var gulp 			 		 = require('gulp'), // Подключаем Gulp
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: 'lesson-dir', // Директория для сервера - для каждой задачи соответствующая
+			baseDir: '02 - JS and CSS Clock', // Директория для сервера - для каждой задачи соответствующая
 			index: "index-VAL.html" // кастомный индекс-файл. Во всех задачах одинаковый.
 		},
 		notify: false,// Отключаем уведомления
