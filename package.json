@@ -1,0 +1,30 @@
+{
+  "name": "javascript30-val",
+  "version": "1.0.0",
+  "description": "my version of JavaScript30 challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/val-fom/JavasScript30-val.git"
+  },
+  "keywords": [
+    "JavaScript30",
+    "JavaScript",
+    "js",
+    "vanila",
+    "vanila js"
+  ],
+  "author": "Val",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/val-fom/JavasScript30-val/issues"
+  },
+  "homepage": "https://github.com/val-fom/JavasScript30-val#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}
