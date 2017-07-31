@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS + CSS Clock</title>
+</head>
+<body>
+
+
+	<div class="clock">
+		<div class="clock-face">
+
+			<div class="circle">
+
+				<div class="number-wrapper number-wrapper-12">
+					<span class="number">12</span>
+				</div>
+				
+				<div class="number-wrapper number-wrapper-1">
+					<span class="number">1</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-2">
+					<span class="number">2</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-3">
+					<span class="number">3</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-4">
+					<span class="number">4</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-5">
+					<span class="number">5</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-6">
+					<span class="number">6</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-7">
+					<span class="number">7</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-8">
+					<span class="number">8</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-9">
+					<span class="number">9</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-10">
+					<span class="number">10</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-11">
+					<span class="number">11</span>
+				</div>
+
+			</div>
+
+			<div class="circle circle-hour">        
+				<div class="hand hand-hour"></div>
+			</div>
+
+			<div class="circle circle-min">
+				<div class="hand hand-min"></div>
+			</div>
+
+			<div class="point point-black"></div>
+
+			<div class="circle circle-sec">
+				<div class="hand hand-sec"></div>
+			</div>
+
+			<div class="point point-red"></div>
+
+		</div>
+	</div>
+
+
+	<style>
+		html {
+			background:#b4b7bd;
+			font-family:'helvetica neue';
+			font-size: 10px;
+		}
+
+		body {
+			margin: 0;
+			font-size: 2rem;
+			display:flex;
+			flex:1;
+			min-height: 100vh;
+			align-items: center;
+		}
+
+		.clock {
+			background: linear-gradient(#d3e8ef, #767574);
+			width: 12rem;
+			height: 12rem;
+			border-radius:50%;
+			margin: 50px auto;
+			position: relative;
+			padding: 0.5rem;
+			box-sizing: border-box;
+			}
+
+			.clock-face {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background: #ffffff;
+				box-shadow: inset 0 0.15rem 0.3rem #767574;
+			}
+
+			.circle {
+				position: absolute;
+				width: 100%;
+				height: 100%;				
+			}
+
+			.number-wrapper {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				transform-origin: 1.5rem 50%;
+			}
+
+			.number {
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				line-height: 3rem;
+				font-size: 1.4rem;
+				display: block;
+				left: 6rem;
+				top: 50%;
+				text-align: center;
+			}
+			
+			.number-wrapper-12 {
+				transform: translateX(4rem) rotate(-90deg);
+			}
+
+			.number-wrapper-12 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(90deg);
+			}
+
+			.number-wrapper-1 {
+				transform: translateX(4rem) rotate(-60deg);
+			}
+
+			.number-wrapper-1 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(60deg);
+			}
+
+			.number-wrapper-2 {
+				transform: translateX(4rem) rotate(-30deg);
+			}
+
+			.number-wrapper-2 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(30deg);
+			}
+
+			.number-wrapper-3 {
+				transform: translateX(4rem) rotate(0deg);
+			}
+
+			.number-wrapper-3 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(0deg);
+			}
+
+			.number-wrapper-4 {
+				transform: translateX(4rem) rotate(30deg);
+			}
+
+			.number-wrapper-4 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-30deg);
+			}
+
+			.number-wrapper-5 {
+				transform: translateX(4rem) rotate(60deg);
+			}
+
+			.number-wrapper-5 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-60deg);
+			}
+
+			.number-wrapper-6 {
+				transform: translateX(4rem) rotate(90deg);
+			}
+
+			.number-wrapper-6 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-90deg);
+			}
+
+			.number-wrapper-7 {
+				transform: translateX(4rem) rotate(120deg);
+			}
+
+			.number-wrapper-7 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-120deg);
+			}
+
+			.number-wrapper-8 {
+				transform: translateX(4rem) rotate(150deg);
+			}
+
+			.number-wrapper-8 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-150deg);
+			}
+
+			.number-wrapper-9 {
+				transform: translateX(4rem) rotate(180deg);
+			}
+
+			.number-wrapper-9 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-180deg);
+			}
+
+			.number-wrapper-10 {
+				transform: translateX(4rem) rotate(210deg);
+			}
+
+			.number-wrapper-10 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-210deg);
+			}
+
+			.number-wrapper-11 {
+				transform: translateX(4rem) rotate(240deg);
+			}
+
+			.number-wrapper-11 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-2400deg);
+			}
+
+			.circle-hour {
+				transform: translate(-0.25rem, -0.25rem);
+			}
+
+			.circle-min {
+				transform: translate(-0.2rem, -0.2rem);
+			}
+
+			.circle-sec {
+				transform: translate(-1rem, -0.1rem);
+			}
+
+			.hand {
+				background: black;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+
+			.hand-hour {
+				width: 2.9rem;
+				height: 0.5rem;
+				border-radius: 0.25rem;
+				transform: rotate(-80deg);
+				transform-origin: 0.25rem 50%;
+			}
+
+			.hand-min {
+				width: 4.3rem;
+				height: 0.4rem;
+				border-radius: 0.2rem;
+				transform: rotate(30deg);
+				transform-origin: 0.2rem 50%;
+			}
+			
+			.hand-sec {
+				background: #fc3d39;
+				width: 5.6rem;
+				height: 0.2rem;
+				border-radius: 0.1rem;
+				transform: rotate(-90deg);
+				transform-origin: 1rem 50%;
+			}
+			
+			.point {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				border-radius: 50%;	
+			}
+
+			.point-black {
+				width: 0.8rem;
+				height: 0.8rem;
+				background: #000000;
+				transform: translate(-0.4rem, -0.4rem);
+			}
+
+			.point-red {
+				width: 0.4rem;
+				height: 0.4rem;
+				background: #ff0500;
+				transform: translate(-0.2rem, -0.2rem);
+			}
+
+		</style>
+
+		<script>
+
+
+		</script>
+	</body>
+	</html>
