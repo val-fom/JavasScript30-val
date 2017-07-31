@@ -10,6 +10,58 @@
 	<div class="clock">
 		<div class="clock-face">
 
+			<div class="circle">
+
+				<div class="number-wrapper number-wrapper-12">
+					<span class="number">12</span>
+				</div>
+				
+				<div class="number-wrapper number-wrapper-1">
+					<span class="number">1</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-2">
+					<span class="number">2</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-3">
+					<span class="number">3</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-4">
+					<span class="number">4</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-5">
+					<span class="number">5</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-6">
+					<span class="number">6</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-7">
+					<span class="number">7</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-8">
+					<span class="number">8</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-9">
+					<span class="number">9</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-10">
+					<span class="number">10</span>
+				</div>
+
+				<div class="number-wrapper number-wrapper-11">
+					<span class="number">11</span>
+				</div>
+
+			</div>
+
 			<div class="circle circle-hour">        
 				<div class="hand hand-hour"></div>
 			</div>
@@ -52,18 +104,11 @@
 			background: linear-gradient(#d3e8ef, #767574);
 			width: 12rem;
 			height: 12rem;
-			/*border:20px solid white;*/
 			border-radius:50%;
 			margin: 50px auto;
 			position: relative;
 			padding: 0.5rem;
 			box-sizing: border-box;
-
-			/*box-shadow:
-				0 0 0 4px rgba(0,0,0,0.1),
-				inset 0 0 0 3px #EFEFEF,
-				inset 0 0 10px black,
-				0 0 10px rgba(0,0,0,0.2);*/
 			}
 
 			.clock-face {
@@ -72,12 +117,128 @@
 				height: 100%;
 				border-radius: 50%;
 				background: #ffffff;
+				box-shadow: inset 0 0.15rem 0.3rem #767574;
 			}
 
 			.circle {
 				position: absolute;
 				width: 100%;
 				height: 100%;				
+			}
+
+			.number-wrapper {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				transform-origin: 1.5rem 50%;
+			}
+
+			.number {
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				line-height: 3rem;
+				font-size: 1.4rem;
+				display: block;
+				left: 6rem;
+				top: 50%;
+				text-align: center;
+			}
+			
+			.number-wrapper-12 {
+				transform: translateX(4rem) rotate(-90deg);
+			}
+
+			.number-wrapper-12 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(90deg);
+			}
+
+			.number-wrapper-1 {
+				transform: translateX(4rem) rotate(-60deg);
+			}
+
+			.number-wrapper-1 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(60deg);
+			}
+
+			.number-wrapper-2 {
+				transform: translateX(4rem) rotate(-30deg);
+			}
+
+			.number-wrapper-2 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(30deg);
+			}
+
+			.number-wrapper-3 {
+				transform: translateX(4rem) rotate(0deg);
+			}
+
+			.number-wrapper-3 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(0deg);
+			}
+
+			.number-wrapper-4 {
+				transform: translateX(4rem) rotate(30deg);
+			}
+
+			.number-wrapper-4 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-30deg);
+			}
+
+			.number-wrapper-5 {
+				transform: translateX(4rem) rotate(60deg);
+			}
+
+			.number-wrapper-5 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-60deg);
+			}
+
+			.number-wrapper-6 {
+				transform: translateX(4rem) rotate(90deg);
+			}
+
+			.number-wrapper-6 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-90deg);
+			}
+
+			.number-wrapper-7 {
+				transform: translateX(4rem) rotate(120deg);
+			}
+
+			.number-wrapper-7 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-120deg);
+			}
+
+			.number-wrapper-8 {
+				transform: translateX(4rem) rotate(150deg);
+			}
+
+			.number-wrapper-8 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-150deg);
+			}
+
+			.number-wrapper-9 {
+				transform: translateX(4rem) rotate(180deg);
+			}
+
+			.number-wrapper-9 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-180deg);
+			}
+
+			.number-wrapper-10 {
+				transform: translateX(4rem) rotate(210deg);
+			}
+
+			.number-wrapper-10 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-210deg);
+			}
+
+			.number-wrapper-11 {
+				transform: translateX(4rem) rotate(240deg);
+			}
+
+			.number-wrapper-11 .number {
+				transform: translate(-1.5rem, -1.5rem) rotate(-2400deg);
 			}
 
 			.circle-hour {
@@ -116,7 +277,7 @@
 			}
 			
 			.hand-sec {
-				background: #ff0500;
+				background: #fc3d39;
 				width: 5.6rem;
 				height: 0.2rem;
 				border-radius: 0.1rem;
