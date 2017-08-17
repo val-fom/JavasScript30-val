@@ -3,5 +3,5 @@ node_modules/
 *.log
 haters/
 .idea/
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
