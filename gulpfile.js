@@ -14,9 +14,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-	gulp.watch('**/*.css', browserSync.reload); // Наблюдение за css файлами в папках задач
-	gulp.watch('**/*.html', browserSync.reload); // Наблюдение за HTML файлами в папках задач
-	gulp.watch('**/*.js', browserSync.reload); // Наблюдение за JS файлами в папках задач
+	// gulp.watch('**/*.css', browserSync.reload); // Наблюдение за css файлами в папках задач
+	gulp.watch('**/index-VAL.html', browserSync.reload); // Наблюдение за HTML файлами в папках задач
+	// gulp.watch('**/*.js', browserSync.reload); // Наблюдение за JS файлами в папках задач
 });
 
 gulp.task('default', ['watch']); // дефолтный таск галпа - watch
